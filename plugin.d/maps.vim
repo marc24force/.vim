@@ -18,9 +18,10 @@ noremap <Leader>O @="O<C-v><Esc>x"<cr>
 nnoremap <silent> <leader>j :<C-u>call append(line("."),   repeat([""], v:count1))<CR>
 nnoremap <silent> <leader>k :<C-u>call append(line(".")-1,   repeat([""], v:count1))<CR>
 
-"open terminal
-nnoremap <silent> <Leader>t :ter ++rows=10<cr> "Open small terminal horizontal
-nnoremap <silent> <Leader>T :rightbe vert ter<cr> "Open large terminal vertical (on the right)
+"Open small terminal horizontal
+nnoremap <silent> <Leader>t :ter ++rows=10<cr>
+"Open large terminal vertical (on the right)
+nnoremap <silent> <Leader>T :rightbe vert ter<cr> 
 
 "reload filetype
 noremap <leader>r :filetype detect<CR>

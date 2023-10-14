@@ -5,20 +5,9 @@
 :set linebreak "if linebreak, don't split words (TODO check textwidth)
 :set showcmd
 :set hidden
+:set listchars=tab:>-
 :set tags=./tags,tags;
 
-" }}}
-
-" Plugin settings {{{5
-" VIMTEX {{{6
-"latex viewer okular
-:let g:vimtex_view_general_viewer = 'okular'
-" }}}
-
-" Airline {{{6
-"airline arrow
-:let g:airline_powerline_fonts = 1
-" }}}
 " }}}
 
 " Load FileType {{{5

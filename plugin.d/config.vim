@@ -1,4 +1,4 @@
-" NERDTree ---- {{{
+" NERDTree ---- {{{5
 let NERDTreeIgnore=['.netrwhist', '\~$', '\.swp$']
 let NERDTreeShowHidden=1
 
@@ -9,7 +9,7 @@ autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTa
 autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
     \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
 
-" NERDTreeGIT {{{
+" NERDTreeGIT {{{6
 let g:NERDTreeGitStatusUntrackedFilesMode = 'all'
 let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ 'Modified'  :'✹',
@@ -27,7 +27,16 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
 
 "}}}
 
-
-" Markdow vim ---- {{{
+" Markdow vim ---- {{{5
 let g:vim_markdown_folding_disabled = 1
+" }}}
+
+" VIMTEX {{{5
+"latex viewer okular
+:let g:vimtex_view_general_viewer = 'okular'
+" }}}
+
+" Airline {{{5
+"airline arrow
+:let g:airline_powerline_fonts = 1
 " }}}
