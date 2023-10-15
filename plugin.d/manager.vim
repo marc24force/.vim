@@ -15,12 +15,15 @@ Plug 'tpope/vim-fugitive'                               "git with vim
 Plug 'godlygeek/tabular'                                "tabulate elements with :Tab /elm for example :Tab /= 
 Plug 'preservim/vim-markdown'                           "Markdown support
 Plug 'moll/vim-bbye'                                    "Don't close window when deleting buffer
+Plug 'kien/ctrlp.vim'                                   "With ctrl+p open file search
+Plug 'chrisbra/unicode.vim'                             "Add unicode and digraph support
 
 " ------------- REMOVED PLUGIN -----------------
-"Plug 'Townk/vim-autoclose'                               "automatically closes ( or [ etc...
-"Plug 'kien/ctrlp.vim'                                    "with ctrl+p open file search
-"Plug 'Valloric/YouCompleteMe'                            "autocomplete
-"Plug 'mg979/vim-visual-multi', {'branch': 'master'}      "multiple cursors
+"Plug 'https://git.sr.ht/~soywod/himalaya-vim'           "Himalaya email cli
+"Plug 'soywod/iris.vim'                                  "Iris email cli
+"Plug 'Townk/vim-autoclose'                              "automatically closes ( or [ etc...
+"Plug 'Valloric/YouCompleteMe'                           "autocomplete
+"Plug 'mg979/vim-visual-multi', {'branch': 'master'}     "multiple cursors
 
 call plug#end()            " required
 
