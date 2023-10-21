@@ -17,10 +17,12 @@ Plug 'preservim/vim-markdown'                           "Markdown support
 Plug 'moll/vim-bbye'                                    "Don't close window when deleting buffer
 Plug 'kien/ctrlp.vim'                                   "With ctrl+p open file search
 Plug 'chrisbra/unicode.vim'                             "Add unicode and digraph support
+Plug 'marc24force/ibis.vim'                             "Custom vim e-mail client
 
 " ------------- REMOVED PLUGIN -----------------
 "Plug 'https://git.sr.ht/~soywod/himalaya-vim'           "Himalaya email cli
-"Plug 'soywod/iris.vim'                                  "Iris email cli
+"Plug 'soywod/iris.vim'                                  "Iris email client, succeded by ibis
+
 "Plug 'Townk/vim-autoclose'                              "automatically closes ( or [ etc...
 "Plug 'Valloric/YouCompleteMe'                           "autocomplete
 "Plug 'mg979/vim-visual-multi', {'branch': 'master'}     "multiple cursors

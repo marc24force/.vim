@@ -40,3 +40,8 @@ let g:vim_markdown_folding_disabled = 1
 "airline arrow
 :let g:airline_powerline_fonts = 1
 " }}}
+
+" Ibis {{{5
+" ibis mail configuration
+source ~/.ibisconfig.vim
+"}}}
