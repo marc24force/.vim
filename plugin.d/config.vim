@@ -43,5 +43,7 @@ let g:vim_markdown_folding_disabled = 1
 
 " Ibis {{{5
 " ibis mail configuration
-source ~/.ibisconfig.vim
+let g:ibis_config = "~/.config/ibis/bsc/bsc.ibis"
+au BufRead,BufNewFile *.ibis set ft=vim
+execute "source" expand(g:ibis_config)
 "}}}
