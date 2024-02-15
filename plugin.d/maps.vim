@@ -60,3 +60,23 @@ function OpenUnderCursor()
 endfunction
 "nnoremap <C-o> :call OpenUnderCursor()<cr>
 
+function! GitShow(branch)
+    let original_window = winnr()
+    let git_top = trim(system('git rev-parse --show-prefix'))
+    let current_file = git_top . expand('%')
+    let new_filename = a:branch . ":" . current_file
+    if buflisted(new_filename)
+      execute 'bo vs ' . fnameescape(new_filename)
+    else
+      let git_show = system('git show ' . new_filename)
+      execute 'bo vs ' . fnameescape(new_filename)
+      call append(0, split(git_show, '\n'))
+      setlocal buftype=nofile nobuflisted noswapfile noma
+    endif
+    execute original_window . 'wincmd w'
+endfunction
+
+command! -nargs=1 GitShow call GitShow(<q-args>)
+
+
+

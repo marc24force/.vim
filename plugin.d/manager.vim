@@ -1,5 +1,7 @@
 call plug#begin('~/.vim/plugin.d') 
 
+let g:plug_url_format = 'git@github.com:%s.git' "Use ssh instead of https
+
 " ------------- ACTIVE PLUGIN LIST ----------------- 
 " Plug + plugin name
 Plug 'preservim/nerdtree'                               "open directory tree to browse files
