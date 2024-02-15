@@ -7,6 +7,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'                      "Shows Git status flags 
 Plug 'PhilRunninger/nerdtree-visual-selection'          "Visual selection in NERDTree
 Plug 'ap/vim-buftabline'                                "show buffers as tabs
 Plug 'suoto/hdlcc'                                      "vhdl support
+Plug 'vhda/verilog_systemverilog.vim'                   "Systemverilog support
 Plug 'lervag/vimtex'                                    "latex support
 Plug 'vim-airline/vim-airline'                          "Status line
 Plug 'rafi/awesome-vim-colorschemes'                    "Colorschemes
